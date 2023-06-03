@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/5127414381.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="d-flex" style="background-color: #a2c7cf; overflow-x: hidden;">
+    
+   
+        <div class="container-fluid d-flex">
+            <div class=" col-lg-2 col-md-1 col-sm-1 bg-light" id="sidebar">
+                <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 min-vh-100">
+                    <a href="/" class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                        <span class="fs-5 d-none d-lg-inline"><img class="" src="img/enval_transparent.jpg" alt="" style="width:200px;"></span>
+                    </a>
+                    <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" style="font-size: 20px; padding-top: 0px;" id="menu">
+                        <li class="active">
+                            <a href="dashboard.html" class="nav-link align-middle " style="color: rgb(90, 88, 88);" id="ombre">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-grid" viewBox="0 0 16 16">
+                                <path d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5v-3zM2.5 2a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zm6.5.5A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zM1 10.5A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zm6.5.5A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3z"/>
+                              </svg>
+                                <i class="fs-4 bi-house"></i> <span class="ms-1 d-none d-lg-inline">Dashboard</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="facture.html" data-bs-toggle="collapse" class="nav-link px-0 align-middle" style="color: rgb(90, 88, 88);" id="ombre">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                                <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+                              </svg>
+                                <i class="fs-4 bi-speedometer2"></i> <span class="ms-1 d-none d-lg-inline">Facture</span> </a>
+                        </li>
+                        <li>
+                            <a href="command.html" class="nav-link px-0 align-middle" style="color: rgb(90, 88, 88);" id="ombre">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-car-front-fill" viewBox="0 0 16 16">
+                                <path d="M2.52 3.515A2.5 2.5 0 0 1 4.82 2h6.362c1 0 1.904.596 2.298 1.515l.792 1.848c.075.175.21.319.38.404.5.25.855.715.965 1.262l.335 1.679c.033.161.049.325.049.49v.413c0 .814-.39 1.543-1 1.997V13.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-1.338c-1.292.048-2.745.088-4 .088s-2.708-.04-4-.088V13.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-1.892c-.61-.454-1-1.183-1-1.997v-.413a2.5 2.5 0 0 1 .049-.49l.335-1.68c.11-.546.465-1.012.964-1.261a.807.807 0 0 0 .381-.404l.792-1.848ZM3 10a1 1 0 1 0 0-2 1 1 0 0 0 0 2Zm10 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2ZM6 8a1 1 0 0 0 0 2h4a1 1 0 1 0 0-2H6ZM2.906 5.189a.51.51 0 0 0 .497.731c.91-.073 3.35-.17 4.597-.17 1.247 0 3.688.097 4.597.17a.51.51 0 0 0 .497-.731l-.956-1.913A.5.5 0 0 0 11.691 3H4.309a.5.5 0 0 0-.447.276L2.906 5.19Z"/>
+                              </svg>
+                                <i class="fs-4 bi-table"></i> <span class="ms-1 d-none d-lg-inline">Commande</span></a>
+                        </li>
+                        <li>
+                            <a href="suivi.html" data-bs-toggle="collapse" class="nav-link px-0 align-middle" style="color: rgb(90, 88, 88);" id="ombre">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag" viewBox="0 0 16 16">
+                                <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"/>
+                              </svg>
+                                <i class="fs-4 bi-bootstrap"></i> <span class="ms-1 d-none d-lg-inline">Suivi</span></a>
+                        
+                        </li>
+                        <li>
+                            <a href="serviceclient.html" data-bs-toggle="collapse" class="nav-link px-0 align-middle" style="color: rgb(90, 88, 88);" id="ombre">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-left-text" viewBox="0 0 16 16">
+                                <path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+                                <path d="M3 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM3 6a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 6zm0 2.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z"/>
+                              </svg>
+                                <i class="fs-4 bi-grid"></i> <span class="ms-1 d-none d-lg-inline">Service Client</span> </a>
+                               
+                        </li>
+                        <li style="margin-top: 55rem;">
+                            <a href="#" class="nav-link px-0 align-middle" style="color: rgb(90, 88, 88);" id="ombre">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gear" viewBox="0 0 16 16">
+                                <path d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492zM5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0z"/>
+                                <path d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52l-.094-.319zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115l.094-.319z"/>
+                              </svg>
+                                <i class="fs-4 bi-people"></i> <span class="ms-1 d-none d-lg-inline">Paramètres de Compte</span> </a>
+                        </li>
+                        <li>
+                            <a href="index.html" class="nav-link px-0 align-middle" style="color: rgb(90, 88, 88);" id="ombre">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-left" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M6 12.5a.5.5 0 0 0 .5.5h8a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5h-8a.5.5 0 0 0-.5.5v2a.5.5 0 0 1-1 0v-2A1.5 1.5 0 0 1 6.5 2h8A1.5 1.5 0 0 1 16 3.5v9a1.5 1.5 0 0 1-1.5 1.5h-8A1.5 1.5 0 0 1 5 12.5v-2a.5.5 0 0 1 1 0v2z"/>
+                                <path fill-rule="evenodd" d="M.146 8.354a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L1.707 7.5H10.5a.5.5 0 0 1 0 1H1.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3z"/>
+                              </svg>
+                                <i class="fs-4 bi-people"></i> <span class="ms-1 d-none d-lg-inline">Déconnexion</span> </a>
+                        </li>
+                    </ul>
+                    
+                </div>
+            </div>
+            <div class="col-lg-9 col-md-11 py-3">
+              <div class="nav-haut position-relative bg-light" style="height: 80px; margin-top: -16px; margin-right: -220px; margin-left: 10px;">
+                <div class="d-flex position-absolute top-50 end-0 translate-middle-y">
+                  <div id="icons">                  
+                    <img style="height: 25px;" src="data:image/png;base64,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" alt="">
+                 </div>
+                 <div id="icons">
+                  <img src="img/b.png" alt="" style="height: 40px;">
+                 </div>
+                </div>
+            </div>
+
+                <div class="container-fluid mt-5">
+                 <div class="row m-4" style="width: 700px;">
+                <div class="col-12 col-md-6">
+                    <div>
+                      <h5 style="margin-left: 30px;">Analyses positives</h5>
+                    </div>
+                    <div class="mt-5" style="border: 0px solid; width: 230px; height: 300px; background-color: #3792a6; border-radius: 9px;">
+                      <div style="text-align: center; margin-top: 20px; color: white;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-lightning-charge-fill" viewBox="0 0 16 16" style="margin-top: 32px;">
+                          <path d="M11.251.068a.5.5 0 0 1 .227.58L9.677 6.5H13a.5.5 0 0 1 .364.843l-8 8.5a.5.5 0 0 1-.842-.49L6.323 9.5H3a.5.5 0 0 1-.364-.843l8-8.5a.5.5 0 0 1 .615-.09z"/>
+                        </svg>
+                        <h6 style="margin-top: 32px; font-size: 30px;">Positif</h6>
+                      </div>
+  
+                      <div class="text-center" style="margin-top: 30px;">
+                        <svg class="circle-container" viewBox="2 -2 28 36" xmlns="http://www.w3.org/2000/svg">
+                          <linearGradient id="gradient">
+                            <stop class="stop1" offset="0%"/>
+                            <stop class="stop2" offset="100%"/>                        
+                          </linearGradient>
+                          <circle class="circle-container__background" r="16" cx="16" cy="16" shape-rendering="geometricPrecision"></circle>
+                          <circle class="circle-container__progress" r="16" cx="16" cy="16" style="stroke-dashoffset: 20" shape-rendering="geometricPrecision"><h6 class="pourcent" style="font-size: 25px; margin-top: -3em;">91%</h6>
+                          </circle>
+                        </svg>                   
+                      </div>
+                    </div>
+                   </div>
+  
+  
+                   <div class="col-12 col-md-6">
+                    <div>
+                      <h5 style="margin-left: 30px;">Analyses Negatives</h5>
+                    </div>
+                    <div class="mt-5" style="border: 1px solid; width: 230px; height: 300px; background-color: white; border-radius: 9px;">
+                      <div style="text-align: center; margin-top: 20px;">
+                        <div class="w-25" style="margin-left: 80px; border-radius: 50%; height: 50px; background-color: #a2c7cf;">
+                          <i class="fa-solid fa-droplet fa-flip-horizontal fa-lg dropA" style="color: #3792a6; margin-top: 20px;"></i>
+                        </div>
+                        <h6 style="margin-top: 32px; font-size: 30px;">Negatif</h6>
+                      </div>
+  
+                      <div class="text-center" style="margin-top: 30px;">
+                        <svg class="circle-container" viewBox="2 -2 28 36" xmlns="http://www.w3.org/2000/svg">
+                          <linearGradient id="gradient">
+                            <stop class="stop1" offset="0%"/>
+                            <stop class="stop2" offset="100%"/>                         
+                          </linearGradient>
+                          <circle style="stroke: rgb(240, 232, 232)" class="circle-container__background" r="16" cx="16" cy="16" shape-rendering="geometricPrecision"></circle>
+                          <circle class="circle-container__progress" r="16" cx="16" cy="16" style="stroke-dashoffset: 60; stroke: #3792a6" shape-rendering="geometricPrecision"><h6 style="font-size: 25px; margin-top: -3em;">9%</h6>
+                          </circle>
+                        </svg>                   
+                      </div>
+  
+                    </div>
+                   </div>
+                 </div>
+
+
+                </div>
+
+
+               
+
+
+
+
+              <div class="mt-5" style="margin-left: 50px; height: 275px; position: fixed; width: 45%;">
+                  <h6>Analyses par mois</h6>
+                  <div>
+                    <canvas class=" col-lg-10 col-md-9 col-sm-12" id="myChart"></canvas>
+                  </div>
+                  
+                  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+                  
+                  <script>
+                    const ctx = document.getElementById('myChart');
+                  
+                    new Chart(ctx, {
+                      type: 'bar',
+                      data: {
+                        labels: ['JAN', 'FEV', 'MARS', 'AVRIL', 'MAI', 'JUIN', 'JUL', 'AOUT', 'SEPT', 'OCT', 'NOV', 'DEC'],
+                        datasets: [{
+                          data: [10, 7, 12, 6, 10, 4, 8, 10, 10, 10, 10, 10],
+                          inflateAmount:1,
+                          barThickness:30,
+                          backgroundColor:'rgb(248,248,248)',
+                          hoverBackgroundColor:'rgb(85,159,177)',
+                          
+                        }]
+                      },
+                      options: {
+                      plugins:{
+                        legend:{
+                          display: false,
+                        },
+                      },
+                        scales: {
+                          y: {
+                            beginAtZero: true,
+                            display: false,
+                          },
+                          x: {
+                            grid:{
+                                color:"white",
+                              },                            
+                          },
+                        }
+                      }
+                    });
+                  </script>
+               </div>
+            </div>
+        </div>
+    
+
+
+</body>
+</html>
